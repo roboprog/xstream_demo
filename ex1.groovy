@@ -2,6 +2,8 @@
 // read or write some data, use XStream library to [de]serialize as needed,
 //  using XML encoding.
 
+codec = new com.thoughtworks.xstream.XStream()
+
 switch ( args[ 0 ]) {
 	case "W" :
 			// init some data
@@ -13,10 +15,10 @@ switch ( args[ 0 ]) {
 			anotherMap[ "buddy" ] = aMap
 
 			// get a stack overflow:
-			println aMap
+			// println aMap
 
 			// dump
-			println "TODO: write " + aMap
+			println codec.toXML( aMap)
 		break
 	case "R" :
 			println "TODO: read"

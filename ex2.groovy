@@ -17,10 +17,10 @@ switch ( args[ 0 ]) {
 	case "R" :
 			// load object back (from stdin)
 			def inStr = System.in.text
-			def aMap = (Map) codec.fromXML( inStr)
+			def bean = (ABeanWithAnUnreasonablyLongName) codec.fromXML( inStr)
 
 			// open the cabinet to show the result of the magic trick:
-			println "The map, (mostly) unharmed: ${aMap}"
+			println "The bean, unharmed: ${ bean }"
 		break
 	default :
 			println "Huh?"
@@ -49,5 +49,9 @@ class ABeanWithAnUnreasonablyLongName {
 		this.salary = salary
 	}
 
+	/** debug dump */
+	public String toString() {
+		return "${ empId } - ${ name }: ${ salary }"
+	}
 }
 

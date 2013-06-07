@@ -8,10 +8,11 @@ codec = new com.thoughtworks.xstream.XStream(
 switch ( args[ 0 ]) {
 	case "W" :
 			// init some data
-			def aMap = [ "a" : 42, "b" : "random" ]
+			def bean = new ABeanWithAnUnreasonablyLongName(
+					"E006", "Joe Blow", 80000)
 
 			// dump
-			println codec.toXML( aMap)
+			println codec.toXML( bean)
 		break
 	case "R" :
 			// load object back (from stdin)
@@ -26,4 +27,27 @@ switch ( args[ 0 ]) {
 		break
 }
 
+/** (immutable) sample bean */
+class ABeanWithAnUnreasonablyLongName {
+
+	/** employee ID */
+	final String empId
+
+	/** employee name */
+	final String name
+
+	/** base salary */
+	final BigDecimal salary
+
+	/** init instance */
+	public ABeanWithAnUnreasonablyLongName(
+			String empId,
+			String name,
+			BigDecimal salary) {
+		this.empId = empId
+		this.name = name
+		this.salary = salary
+	}
+
+}
 

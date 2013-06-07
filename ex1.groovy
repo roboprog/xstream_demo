@@ -39,4 +39,5 @@ switch ( args[ 0 ]) {
 		break
 }
 
-
+// vi: ts=4 sw=4
+// *** EOF ***

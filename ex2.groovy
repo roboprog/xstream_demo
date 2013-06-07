@@ -4,6 +4,7 @@
 
 codec = new com.thoughtworks.xstream.XStream(
 		new com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver() )
+codec.alias "emprec", ABeanWithAnUnreasonablyLongName.class
 
 switch ( args[ 0 ]) {
 	case "W" :

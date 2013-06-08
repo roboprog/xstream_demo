@@ -9,15 +9,16 @@
 	<STYLE TYPE="text/css">
 	<!--
 		@page { margin: 0.79in }
-		* { background: #ffff99; }
+		* { background: cornsilk; }
 		.text-body-indent , .text-body-indent U , .text-body-indent B { background: #4c1900; }
-		P { margin-bottom: 0.08in; background: #ffff99; color: #663300 }
-		H1 { margin-bottom: 0.08in; background: #ffff99; color: #663300 }
+		P { margin-bottom: 0.08in; background: cornsilk; color: #663300 }
+		P.text-body-indent { padding: 0px; margin: 0px; }
+		H1 { margin-bottom: 0.08in; background: cornsilk; color: #663300 }
 		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
 		H1.cjk { font-family: "Arial Unicode MS"; font-size: 16pt }
 		H1.ctl { font-size: 16pt }
 		P.text-body-indent { margin-left: 0.2in; margin-bottom: 0.02in; background: #4c1900; color: #00dcff; font-family: "Courier New", monospace; font-size: 10pt }
-		H2 { background: #ffff99; color: #663300 }
+		H2 { background: cornsilk; color: #663300 }
 		H2.western { font-family: "Albany", sans-serif; font-size: 14pt; font-style: italic }
 		H2.cjk { font-family: "HG Mincho Light J"; font-size: 14pt; font-style: italic }
 		H2.ctl { font-family: "Arial Unicode MS"; font-size: 14pt; font-style: italic }
@@ -59,9 +60,10 @@ and have the example code from
 <A HREF="https://github.com/roboprog/xstream_demo">https://github.com/roboprog/xstream_demo</A>,
 you should be able to create a serialized object by doing something
 like the following:</P>
-<P><BR><BR>
+<P><BR>
 </P>
 <DIV CLASS="text-body-indent">
+<P CLASS="text-body-indent"><BR><BR></P>
 <P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
 <P CLASS="text-body-indent"><U>$</U> <B>$GROOVY_HOME/bin/groovy
 ex1.groovy W</B></P>
@@ -113,7 +115,8 @@ that the data structure has a cyclic reference – the two Map
 objects reference each other. This is not a problem (at least for an
 XML encoding), as the serializer detects the cycle and puts in an
 XPath style link for the reference to the repeated object, rather
-than trying to infinitely nest the values.</P>
+than trying to infinitely nest the values.
+(also, the XML tags are actually indented, but my editor stripped off the leading blanks)</P>
 <P><BR><BR>
 </P>
 <P>A Groovy language related note: the xstream packages are included
@@ -128,6 +131,7 @@ written out, let's prove that we can read it back:</P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
 <DIV CLASS="text-body-indent">
+<P CLASS="text-body-indent"><BR><BR></P>
 <P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
 <P CLASS="text-body-indent"><U>$</U> <B>$GROOVY_HOME/bin/groovy
 ex1.groovy W &gt; ex1.txt</B></P>
@@ -168,6 +172,7 @@ XML.
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
 <DIV CLASS="text-body-indent">
+<P CLASS="text-body-indent"><BR><BR></P>
 <P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
 <P CLASS="text-body-indent"><U>$</U> <B>$GROOVY_HOME/bin/groovy -cp
 ./jettison-1.2.jar ex2.groovy W </B>
@@ -201,6 +206,7 @@ web service now, let's connect this “server” up to a “client”
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
 <DIV CLASS="text-body-indent">
+<P CLASS="text-body-indent"><BR><BR></P>
 <P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
 <P CLASS="text-body-indent"><U>$</U> <B>$GROOVY_HOME/bin/groovy -cp
 ./jettison-1.2.jar ex2.groovy W | $GROOVY_HOME/bin/groovy -cp
@@ -212,6 +218,7 @@ web service now, let's connect this “server” up to a “client”
 <P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
 <P CLASS="text-body-indent"><U>$</U> 
 </P>
+<P CLASS="text-body-indent"><BR><BR></P>
 </DIV>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
@@ -241,7 +248,8 @@ for another day.</P>
 </P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
-<P STYLE="margin-bottom: 0in">-Rob Anderson</P>
+<P STYLE="margin-bottom: 0in">-Rob Anderson,
+	<a href="http://roboprogs.com/">roboprogs.com</a></P>
 <P STYLE="margin-bottom: 0in">June 7, 2013</P>
 </BODY>
 </HTML>

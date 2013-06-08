@@ -5,18 +5,18 @@
 	<TITLE></TITLE>
 	<META NAME="GENERATOR" CONTENT="LibreOffice 3.5  (MacOSX)">
 	<META NAME="CREATED" CONTENT="20130607;19182000">
-	<META NAME="CHANGED" CONTENT="20130607;20193700">
+	<META NAME="CHANGED" CONTENT="20130607;20421300">
 	<STYLE TYPE="text/css">
 	<!--
 		@page { margin: 0.79in }
+		* { background: #ffff99; }
+		.text-body-indent { background: #4c1900; }
 		P { margin-bottom: 0.08in; background: #ffff99; color: #663300 }
 		H1 { margin-bottom: 0.08in; background: #ffff99; color: #663300 }
 		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
 		H1.cjk { font-family: "Arial Unicode MS"; font-size: 16pt }
 		H1.ctl { font-size: 16pt }
-		P.text-body-indent-western { margin-left: 0.2in; margin-bottom: 0.02in; background: #4c1900; color: #00dcff; font-family: "Courier New", monospace; font-size: 10pt }
-		P.text-body-indent-cjk { margin-left: 0.2in; margin-bottom: 0.02in; background: #4c1900; color: #00dcff }
-		P.text-body-indent-ctl { margin-left: 0.2in; margin-bottom: 0.02in; background: #4c1900; color: #00dcff }
+		P.text-body-indent { margin-left: 0.2in; margin-bottom: 0.02in; background: #4c1900; color: #00dcff; font-family: "Courier New", monospace; font-size: 10pt }
 		H2 { background: #ffff99; color: #663300 }
 		H2.western { font-family: "Albany", sans-serif; font-size: 14pt; font-style: italic }
 		H2.cjk { font-family: "HG Mincho Light J"; font-size: 14pt; font-style: italic }
@@ -61,44 +61,46 @@ you should be able to create a serialized object by doing something
 like the following:</P>
 <P><BR><BR>
 </P>
-<P CLASS="text-body-indent-western"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
-<P CLASS="text-body-indent-western"><U>$</U> <B>$GROOVY_HOME/bin/groovy
+<DIV CLASS="text-body-indent">
+<P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
+<P CLASS="text-body-indent"><U>$</U> <B>$GROOVY_HOME/bin/groovy
 ex1.groovy W</B></P>
-<P CLASS="text-body-indent-western">&lt;linked-hash-map&gt;</P>
-<P CLASS="text-body-indent-western">&lt;entry&gt;</P>
-<P CLASS="text-body-indent-western">&lt;string&gt;a&lt;/string&gt;</P>
-<P CLASS="text-body-indent-western">&lt;int&gt;42&lt;/int&gt;</P>
-<P CLASS="text-body-indent-western">&lt;/entry&gt;</P>
-<P CLASS="text-body-indent-western">&lt;entry&gt;</P>
-<P CLASS="text-body-indent-western">&lt;string&gt;b&lt;/string&gt;</P>
-<P CLASS="text-body-indent-western">&lt;string&gt;random&lt;/string&gt;</P>
-<P CLASS="text-body-indent-western">&lt;/entry&gt;</P>
-<P CLASS="text-body-indent-western">&lt;entry&gt;</P>
-<P CLASS="text-body-indent-western">&lt;string&gt;buddy&lt;/string&gt;</P>
-<P CLASS="text-body-indent-western">&lt;linked-hash-map&gt;</P>
-<P CLASS="text-body-indent-western">&lt;entry&gt;</P>
-<P CLASS="text-body-indent-western">&lt;string&gt;a&lt;/string&gt;</P>
-<P CLASS="text-body-indent-western">&lt;int&gt;86&lt;/int&gt;</P>
-<P CLASS="text-body-indent-western">&lt;/entry&gt;</P>
-<P CLASS="text-body-indent-western">&lt;entry&gt;</P>
-<P CLASS="text-body-indent-western">&lt;string&gt;b&lt;/string&gt;</P>
-<P CLASS="text-body-indent-western">&lt;string&gt;text&lt;/string&gt;</P>
-<P CLASS="text-body-indent-western">&lt;/entry&gt;</P>
-<P CLASS="text-body-indent-western">&lt;entry&gt;</P>
-<P CLASS="text-body-indent-western">&lt;string&gt;buddy&lt;/string&gt;</P>
-<P CLASS="text-body-indent-western">&lt;linked-hash-map
+<P CLASS="text-body-indent">&lt;linked-hash-map&gt;</P>
+<P CLASS="text-body-indent">&lt;entry&gt;</P>
+<P CLASS="text-body-indent">&lt;string&gt;a&lt;/string&gt;</P>
+<P CLASS="text-body-indent">&lt;int&gt;42&lt;/int&gt;</P>
+<P CLASS="text-body-indent">&lt;/entry&gt;</P>
+<P CLASS="text-body-indent">&lt;entry&gt;</P>
+<P CLASS="text-body-indent">&lt;string&gt;b&lt;/string&gt;</P>
+<P CLASS="text-body-indent">&lt;string&gt;random&lt;/string&gt;</P>
+<P CLASS="text-body-indent">&lt;/entry&gt;</P>
+<P CLASS="text-body-indent">&lt;entry&gt;</P>
+<P CLASS="text-body-indent">&lt;string&gt;buddy&lt;/string&gt;</P>
+<P CLASS="text-body-indent">&lt;linked-hash-map&gt;</P>
+<P CLASS="text-body-indent">&lt;entry&gt;</P>
+<P CLASS="text-body-indent">&lt;string&gt;a&lt;/string&gt;</P>
+<P CLASS="text-body-indent">&lt;int&gt;86&lt;/int&gt;</P>
+<P CLASS="text-body-indent">&lt;/entry&gt;</P>
+<P CLASS="text-body-indent">&lt;entry&gt;</P>
+<P CLASS="text-body-indent">&lt;string&gt;b&lt;/string&gt;</P>
+<P CLASS="text-body-indent">&lt;string&gt;text&lt;/string&gt;</P>
+<P CLASS="text-body-indent">&lt;/entry&gt;</P>
+<P CLASS="text-body-indent">&lt;entry&gt;</P>
+<P CLASS="text-body-indent">&lt;string&gt;buddy&lt;/string&gt;</P>
+<P CLASS="text-body-indent">&lt;linked-hash-map
 reference=&quot;../../../..&quot;/&gt;</P>
-<P CLASS="text-body-indent-western">&lt;/entry&gt;</P>
-<P CLASS="text-body-indent-western">&lt;/linked-hash-map&gt;</P>
-<P CLASS="text-body-indent-western">&lt;/entry&gt;</P>
-<P CLASS="text-body-indent-western">&lt;/linked-hash-map&gt;</P>
-<P CLASS="text-body-indent-western"><BR><BR>
+<P CLASS="text-body-indent">&lt;/entry&gt;</P>
+<P CLASS="text-body-indent">&lt;/linked-hash-map&gt;</P>
+<P CLASS="text-body-indent">&lt;/entry&gt;</P>
+<P CLASS="text-body-indent">&lt;/linked-hash-map&gt;</P>
+<P CLASS="text-body-indent"><BR><BR>
 </P>
-<P CLASS="text-body-indent-western"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
-<P CLASS="text-body-indent-western"><U>$</U> 
+<P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
+<P CLASS="text-body-indent"><U>$</U> 
 </P>
-<P CLASS="text-body-indent-western"><BR><BR>
+<P CLASS="text-body-indent"><BR><BR>
 </P>
+</DIV CLASS="text-body-indent">
 <P><BR><BR>
 </P>
 <P>Note that both demo programs take only a single command line
@@ -114,7 +116,7 @@ XPath style link for the reference to the repeated object, rather
 than trying to infinitely nest the values.</P>
 <P><BR><BR>
 </P>
-<P>A Groovy language related note:  the xstream packages are included
+<P>A Groovy language related note: the xstream packages are included
 as part of the standard runtime, so you don't even need to include
 anything extra on the classpath.</P>
 <P><BR><BR>
@@ -125,25 +127,25 @@ anything extra on the classpath.</P>
 written out, let's prove that we can read it back:</P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
-<P CLASS="text-body-indent-western"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
-<P CLASS="text-body-indent-western"><U>$</U> <B>$GROOVY_HOME/bin/groovy
+<P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
+<P CLASS="text-body-indent"><U>$</U> <B>$GROOVY_HOME/bin/groovy
 ex1.groovy W &gt; ex1.txt</B></P>
-<P CLASS="text-body-indent-western"><BR><BR>
+<P CLASS="text-body-indent"><BR><BR>
 </P>
-<P CLASS="text-body-indent-western"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
-<P CLASS="text-body-indent-western"><U>$</U> <B>$GROOVY_HOME/bin/groovy
+<P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
+<P CLASS="text-body-indent"><U>$</U> <B>$GROOVY_HOME/bin/groovy
 ex1.groovy R &lt; ex1.txt</B></P>
-<P CLASS="text-body-indent-western">The maps, (mostly) unharmed: 
+<P CLASS="text-body-indent">The maps, (mostly) unharmed: 
 </P>
-<P CLASS="text-body-indent-western">1) [a:42, b:random]; 
+<P CLASS="text-body-indent">1) [a:42, b:random]; 
 </P>
-<P CLASS="text-body-indent-western">2) [a:86, b:text]</P>
-<P CLASS="text-body-indent-western"><BR><BR>
+<P CLASS="text-body-indent">2) [a:86, b:text]</P>
+<P CLASS="text-body-indent"><BR><BR>
 </P>
-<P CLASS="text-body-indent-western"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
-<P CLASS="text-body-indent-western"><U>$</U> 
+<P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
+<P CLASS="text-body-indent"><U>$</U> 
 </P>
-<P CLASS="text-body-indent-western"><BR><BR>
+<P CLASS="text-body-indent"><BR><BR>
 </P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
@@ -155,12 +157,74 @@ created.</P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
 <H2 CLASS="western">Example 2</H2>
-<P STYLE="margin-bottom: 0in">So far, this is pretty simple. 
-However, it's writing XML, and that's just too “90s” for us. 
-That, and it makes for very long output.  For the next example, we
-are going to use the jettison library to serialize out output as
-JSON, rather than XML.  
+<P STYLE="margin-bottom: 0in">So far, this is pretty simple. However,
+it's writing XML, and that's just too “90s” for us. That, and it
+makes for very long output. For the next example, we are going to use
+the jettison library to serialize our output as JSON, rather than
+XML. 
 </P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
+<P CLASS="text-body-indent"><U>$</U> <B>$GROOVY_HOME/bin/groovy -cp
+./jettison-1.2.jar ex2.groovy W </B>
+</P>
+<P CLASS="text-body-indent">{&quot;emprec&quot;:{&quot;empId&quot;:&quot;E006&quot;,&quot;name&quot;:&quot;Joe
+Blow&quot;,&quot;salary&quot;:80000}}</P>
+<P CLASS="text-body-indent"><BR><BR>
+</P>
+<P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
+<P CLASS="text-body-indent"><U>$</U> 
+</P>
+<P CLASS="text-body-indent"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Looks much more compact. Good.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">A couple new features used in this
+example: if you have a class with a long name (including any package
+prefix), you can set an alias (“emprec”, in this case) for the
+class to shorten the output; the class used here has a non-default
+constructor and final fields, but XStream is able to create and
+initialize such objects anyway.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Seeing as how this looks so much like a
+web service now, let's connect this “server” up to a “client”
+(using a pipe) to test the read-back / deserialization:</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
+<P CLASS="text-body-indent"><U>$</U> <B>$GROOVY_HOME/bin/groovy -cp
+./jettison-1.2.jar ex2.groovy W | $GROOVY_HOME/bin/groovy -cp
+./jettison-1.2.jar ex2.groovy R</B></P>
+<P CLASS="text-body-indent">The bean, unharmed: E006 - Joe Blow:
+80000</P>
+<P CLASS="text-body-indent"><BR><BR>
+</P>
+<P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
+<P CLASS="text-body-indent"><U>$</U> 
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Note:  I wished Groovy supported “#”
+comments like a proper Unix scripting language, so I could put a
+“shebang” line at the top of the scripts, but that's a problem
+for another day.</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<H2 CLASS="western">Further Reading</H2>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Read the fine manual:</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><A HREF="http://xstream.codehaus.org/javadoc/index.html">http://xstream.codehaus.org/javadoc/index.html</A></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><A HREF="http://xstream.codehaus.org/javadoc/com/thoughtworks/xstream/io/json/JettisonMappedXmlDriver.html">http://xstream.codehaus.org/javadoc/com/thoughtworks/xstream/io/json/JettisonMappedXmlDriver.html</A></P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
 <P STYLE="margin-bottom: 0in"><BR>

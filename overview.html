@@ -10,7 +10,7 @@
 	<!--
 		@page { margin: 0.79in }
 		* { background: #ffff99; }
-		.text-body-indent { background: #4c1900; }
+		.text-body-indent , .text-body-indent U , .text-body-indent B { background: #4c1900; }
 		P { margin-bottom: 0.08in; background: #ffff99; color: #663300 }
 		H1 { margin-bottom: 0.08in; background: #ffff99; color: #663300 }
 		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
@@ -100,7 +100,7 @@ reference=&quot;../../../..&quot;/&gt;</P>
 </P>
 <P CLASS="text-body-indent"><BR><BR>
 </P>
-</DIV CLASS="text-body-indent">
+</DIV>
 <P><BR><BR>
 </P>
 <P>Note that both demo programs take only a single command line
@@ -127,6 +127,7 @@ anything extra on the classpath.</P>
 written out, let's prove that we can read it back:</P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
+<DIV CLASS="text-body-indent">
 <P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
 <P CLASS="text-body-indent"><U>$</U> <B>$GROOVY_HOME/bin/groovy
 ex1.groovy W &gt; ex1.txt</B></P>
@@ -147,6 +148,7 @@ ex1.groovy R &lt; ex1.txt</B></P>
 </P>
 <P CLASS="text-body-indent"><BR><BR>
 </P>
+</DIV>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
 <P STYLE="margin-bottom: 0in">The demo code has to remove the
@@ -165,6 +167,7 @@ XML.
 </P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
+<DIV CLASS="text-body-indent">
 <P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
 <P CLASS="text-body-indent"><U>$</U> <B>$GROOVY_HOME/bin/groovy -cp
 ./jettison-1.2.jar ex2.groovy W </B>
@@ -178,6 +181,7 @@ Blow&quot;,&quot;salary&quot;:80000}}</P>
 </P>
 <P CLASS="text-body-indent"><BR><BR>
 </P>
+</DIV>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
 <P STYLE="margin-bottom: 0in">Looks much more compact. Good.</P>
@@ -196,6 +200,7 @@ web service now, let's connect this “server” up to a “client”
 (using a pipe) to test the read-back / deserialization:</P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
+<DIV CLASS="text-body-indent">
 <P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
 <P CLASS="text-body-indent"><U>$</U> <B>$GROOVY_HOME/bin/groovy -cp
 ./jettison-1.2.jar ex2.groovy W | $GROOVY_HOME/bin/groovy -cp
@@ -207,6 +212,7 @@ web service now, let's connect this “server” up to a “client”
 <P CLASS="text-body-indent"><U>rob@hyperion:~/proj/xstream_demo&gt;</U></P>
 <P CLASS="text-body-indent"><U>$</U> 
 </P>
+</DIV>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
 <P STYLE="margin-bottom: 0in">Note:  I wished Groovy supported “#”
@@ -221,10 +227,12 @@ for another day.</P>
 <P STYLE="margin-bottom: 0in">Read the fine manual:</P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
-<P STYLE="margin-bottom: 0in"><A HREF="http://xstream.codehaus.org/javadoc/index.html">http://xstream.codehaus.org/javadoc/index.html</A></P>
+<P STYLE="margin-bottom: 0in"><A HREF="http://xstream.codehaus.org/javadoc/com/thoughtworks/xstream/XStream.html">
+		http://xstream.codehaus.org/javadoc/com/thoughtworks/xstream/XStream.html</A></P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
-<P STYLE="margin-bottom: 0in"><A HREF="http://xstream.codehaus.org/javadoc/com/thoughtworks/xstream/io/json/JettisonMappedXmlDriver.html">http://xstream.codehaus.org/javadoc/com/thoughtworks/xstream/io/json/JettisonMappedXmlDriver.html</A></P>
+<P STYLE="margin-bottom: 0in"><A HREF="http://xstream.codehaus.org/javadoc/com/thoughtworks/xstream/io/json/JettisonMappedXmlDriver.html">
+		http://xstream.codehaus.org/javadoc/com/thoughtworks/xstream/io/json/JettisonMappedXmlDriver.html</A></P>
 <P STYLE="margin-bottom: 0in"><BR>
 </P>
 <P STYLE="margin-bottom: 0in"><BR>

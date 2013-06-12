@@ -28,7 +28,16 @@ switch ( args[ 0 ]) {
 		break
 }
 
-/** (immutable) sample bean */
+/**
+ * (immutable) sample bean.
+ * <p>
+ * Note that this bean tries to be as unhelpful as possible:
+ *  it is NOT serializable,
+ *  has no default constructor,
+ *  has final fields with no setters.
+ *  However, XStream is still able to recreate it on read-back.
+ * </p>
+ */
 class ABeanWithAnUnreasonablyLongName {
 
 	/** employee ID */
